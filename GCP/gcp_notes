@@ -1,0 +1,28 @@
+Curso de google cloud platform: Coursera
+
+:::Hadoop administrado en la nube:::::
+El administrador sería Dataproc que gestiona todo lo relacionado con Hadoop, pig(ETL scripts), hive(offer a sql context) and spark 
+
+En lugar de almacenar los datos en archivos HDFS hágalo en google cloud storage :
+-HDFs:Toma los datos y los divide en el cluster Dataproc, lo que requieren que el luster esté arriba porque si se elimina entoncs la informacion no estáa disponible o incluso se pierd
+Además al estar la infomacion distribuida en el cluster y el cluster tener que estar arribar(porque no queremos perder la informaci'on), el costo (facturación mensual) va a ser mayor
+Con lo anterior estamos pagando (24/7)solo por storage así el cluster no esté ejecutandose (corriendo jobs)
+
+
+-Google Cloud Storage: El ciclo de vida del cluster(data proc cluster) y el ciclo de vida del storage están separados (note ariba que no es así ya que si el uno está abajo la información no está disponible), ASI QUE podemos encender el luster procesar la información y hacer delete del cluster(para ahorrar costos) y la info sigu en GCS
+Almacene la info idealmente en una sola region de bucket y cree el dataproc cluster en esa misma region
+
+
+Instancia mysql::::::::::::::::::::::::::::::::::::
+
+Instancia mysql
+user root
+pwd root321
+35.196.82.212
+
+
+Cloud Shell (cliente)
+(Paso 7)
+Cloud SQL (servidor MySQL)
+(Paso 10)
+::::::::::::::::::::::::::::::::::::::::::::::::::
