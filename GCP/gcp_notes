@@ -28,6 +28,7 @@ Cloud SQL (servidor MySQL)
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+<<<<<<< HEAD
 OJO EMPEZAR A ELIMINAR SERVICIOS PORQUE YA NOS ESTÁ BAJANDO EL PRESUPUESTO GRATIS 
 
 
@@ -63,3 +64,34 @@ OTRA opción para hacer prediciones es crear una red neuronal
 
 
 
+=======
+:::2018-10-30: Cloud Datastore::::::::::::::::::::::::::::::::::::::::::::::
+Nos ayuda con el tratamiendo de grandes volumens de información:
+Inicialmente teníamos bases de datos relacionales y mapeado por ejemplo en un backend como objetos pero si la tabla se llama player y tiene un tipo 
+entonces aparece la famosa IMPEDANCIA, que no es más que por el modelo objectual tndriamos la clase Player pero 2 clases eje Futbol o Tennis y heredando de 
+player pero en BD es una sola columna tipo!!
+
+Datastore permite almacenar el objeto completo ! escala hasta Terabytes de datos
+Datastore interaction: DataStore es como un Hashmap
+
+BigTable: Niveles de PetaBytes
+Bigtable seems to be designed for HBase compatibility, whereas Datastore is more geared towards Python/Java/Go web app developers (originally App Engine)
+Bigtable is 'a bit more IaaS' than Datastore in that it's not 'just there' but requires a cluster to be configured.
+Bigtable supports only one index - the 'row key' (the entity key in Datastore)
+This means queries are on the Key, unlike Datastore's indexed properties
+Bigtable supports atomicity only on a single row - there are no transactions
+Mutations and deletions appear not to be atomic in Bigtable, whereas Datastore provides eventual and strong consistency, depending on the read/query method
+The billing model is very different:
+Datastore charges for read/write operations, storage and bandwidth
+Bigtable charges for 'nodes', storage and bandwidth
+
+::::::DATA LAB::::::::::::::::
+aDEMÁS DE Lo anterior esta es otra herramienta tecnológica que podemos usar
+
+DataLab es un notebook open suource solo pagamos por los recursos de GCP
+
+Opciones para trabajar con DataLab:
+1) Locally : Own cpu, instalando la imagen de docker que contiene el datalab. Buena idea pero si vas a probar o eres el único que vas a usar ese Notebook 
+2) El notebook instalado en CE (compue engine) y conectandonos con shell al cloud shell y todo lo que corramos se realiza en el compue Engine Instance
+3) 
+>>>>>>> c9095a4964689a6f303c2153c26f2859c11f4f0c
