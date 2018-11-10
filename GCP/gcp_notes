@@ -26,3 +26,40 @@ Cloud Shell (cliente)
 Cloud SQL (servidor MySQL)
 (Paso 10)
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+OJO EMPEZAR A ELIMINAR SERVICIOS PORQUE YA NOS ESTÁ BAJANDO EL PRESUPUESTO GRATIS 
+
+
+
+iniciar una vm
+datalab connect mydatalabvm
+
+
+::Para cambiar de zona a una VM::::::::::
+
+gcloud compute instances move mydatalabvm --zone us-central1-b --destination-zone us-central1-f
+
+::::::::::::::::::::::::::::::::::::::::::::::::::TENSOR FLOW ;::::::::::::::::::::::::::::::::::::..
+ml library that google open sourced in 2015 , es bśicamente una librería de procesamiento numérico
+
+
+Que es una red neuronal? Neural network?:
+
+
+
+:::::.Feature enginerign 
+Agregar nuevas caracteristicas O INSIGHTS o conocimientos que hacen que se afine la predición a traves de las iteraciones
+
+
+OTRA opción para hacer prediciones es crear una red neuronal 
+
+
+
+
+
+
+
+
+
+
