@@ -28,6 +28,43 @@ Cloud SQL (servidor MySQL)
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+<<<<<<< HEAD
+OJO EMPEZAR A ELIMINAR SERVICIOS PORQUE YA NOS ESTÁ BAJANDO EL PRESUPUESTO GRATIS 
+
+
+
+iniciar una vm
+datalab connect mydatalabvm
+
+
+::Para cambiar de zona a una VM::::::::::
+
+gcloud compute instances move mydatalabvm --zone us-central1-b --destination-zone us-central1-f
+
+::::::::::::::::::::::::::::::::::::::::::::::::::TENSOR FLOW ;::::::::::::::::::::::::::::::::::::..
+ml library that google open sourced in 2015 , es bśicamente una librería de procesamiento numérico
+
+
+Que es una red neuronal? Neural network?:
+
+
+
+:::::.Feature enginerign 
+Agregar nuevas caracteristicas O INSIGHTS o conocimientos que hacen que se afine la predición a traves de las iteraciones
+
+
+OTRA opción para hacer prediciones es crear una red neuronal 
+
+
+
+
+
+
+
+
+
+
+=======
 :::2018-10-30: Cloud Datastore::::::::::::::::::::::::::::::::::::::::::::::
 Nos ayuda con el tratamiendo de grandes volumens de información:
 Inicialmente teníamos bases de datos relacionales y mapeado por ejemplo en un backend como objetos pero si la tabla se llama player y tiene un tipo 
