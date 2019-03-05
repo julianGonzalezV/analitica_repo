@@ -56,4 +56,4 @@ DataLab es un notebook open suource solo pagamos por los recursos de GCP
 Opciones para trabajar con DataLab:
 1) Locally : Own cpu, instalando la imagen de docker que contiene el datalab. Buena idea pero si vas a probar o eres el único que vas a usar ese Notebook 
 2) El notebook instalado en CE (compue engine) y conectandonos con shell al cloud shell y todo lo que corramos se realiza en el compue Engine Instance
-3) 
+3) Docker + Gateway : Again , tenerlo en un CE instance pero accediendo a traves de un gateway(un proxy setup ) 
