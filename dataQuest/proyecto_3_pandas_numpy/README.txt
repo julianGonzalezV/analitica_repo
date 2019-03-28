@@ -21,3 +21,20 @@ ndarray.shape --> it retunrs a tuple(inmutable lists in python) where the first 
 first dimmension or ROWS IN THE DATA SET axe and 
 the second refers to the number of columns ON THE DATA SET or the number of items long in the second dimension
 
+ndarray[row,column]: row = cantidad de registros que dese, column=cantidad de columnas que deseo seleccionar
+ - Si tuvieramos un list of list normalito entonces sería list[row][column]
+
+Both row and column can be one of the following:
+
+- An integer, indicating a specific location, eg ndarray[3,0].
+- A slice, indicating a range of locations, eg ndarray[0:5,6:].
+- A colon, indicating every location, eg ndarray[:,2].
+- A list of values, indicating specific locations, eg ndarray[[0,1,3,4],0].
+- A boolean array, indicating specific locations - we'll look at this method in detail in the second mission of this course.
+Or any combination of the above.
+
+Ventajas:
+
+- Las operaciones y funciones contra matrices son muy ganadoras en cuanto a sintactic sugar.
+
+
