@@ -38,3 +38,17 @@ Ventajas:
 - Las operaciones y funciones contra matrices son muy ganadoras en cuanto a sintactic sugar.
 
 
+
+:::::::::::::::::::::::Vector Math:::::::::::::::
+https://docs.scipy.org/doc/numpy-1.14.0/reference/routines.math.html#arithmetic-operations
+
+Eje: sums2 = my_numbers[:,0] + my_numbers[:,1]
+Operaciones 
+vector_a + vector_b - Addition
+vector_a - vector_b - Subtraction
+vector_a * vector_b - Multiplication (this is unrelated to the vector multiplication used in linear algebra).
+vector_a / vector_b - Division
+vector_a % vector_b - Modulus (find the remainder when vector_a is divided by vector_b)
+vector_a ** vector_b - Exponent (raise vector_a to the power of vector_b)
+vector_a // vector_b - Floor Division (divide vector_a by vector_b, rounding down to the nearest integer)
+
