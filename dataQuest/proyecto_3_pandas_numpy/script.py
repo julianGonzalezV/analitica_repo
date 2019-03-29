@@ -96,3 +96,72 @@ mph_mean = trip_mph.mean()
 
 # operaciones de narrays con umpy: https://docs.scipy.org/doc/numpy-1.14.0/reference/arrays.ndarray.html#calculation
 
+
+#::::::::9. Calculating Statistics For 2D ndarrays:::::::::::::::::
+
+taxi_first_five = taxi[:5]
+# select these columns: fare_amount, fees_amount, tolls_amount, tip_amount
+fare_components = taxi_first_five[:,9:13] 
+# select the total_amount column
+fare_totals = taxi_first_five[:,13]
+
+# sum the component columns
+fare_sums = fare_components.sum(axis=1)
+
+# compare the summed columns to the fare_totals
+print(fare_totals.round())
+print(fare_sums)
+
+#Using a single method, calculate the mean value for each column of taxi
+# Ojo note que 0 se va por cada columna y sobre cada fila de esa columna selecciona el mayor
+taxi_column_means = taxi.mean(axis=0)
+
+# 10. Adding Rows and Columns to ndarrays::::
+#  numpy.concatenate([l1,l2,...ln], axis = 0/1) : 0 will add rows and 1 will add columns
+
+# These `ones` and `zeros` variables
+# are different from the ones in the
+# main lesson example
+
+print(ones)
+print(zeros)
+print() # creates a space in our output
+
+print(ones.shape)
+print(zeros.shape)
+print()
+
+zeros_2d = np.expand_dims(zeros,axis=1)
+print(zeros_2d)
+print(zeros_2d.shape)
+print()
+print('\n')
+combined = np.concatenate([ones,zeros_2d],axis=1)
+print(combined)
+print()
+
+# the `trip_mph` variable is still available from the
+# previous screen
+
+
+#task:
+
+# Expand the dimensions of trip_mph to be a single column in a 2D ndarray
+# axis = 1 porque lo que deseamos es agregar una columna, si lo que deseo
+# es agregar una fila entonces axis = 0
+trip_mph_2d = np.expand_dims(trip_mph ,axis=1)
+
+#Add trip_mph_2d as a new column at the end of taxi:
+taxi = np.concatenate([taxi,trip_mph_2d],axis=1)
+print(taxi)
+
+# 11. Sorting ndarrays::::::::::::::::::::::
+ # Use numpy.argsort() to get the indices which would sort the trip_mph column from the taxi ndarray. The trip_mph column is at column index 15
+# Para mayor entendimiento, he creado la variable  last_column para obtener la columna por la cual deseo ordenar, puede ser cualquier index   
+last_column = taxi[:,15]
+# acá vemos como numpy obtiene los indices que debe ordenar y especifica el orden ej e indice 2 va en la 1ra posiciín el 1 en la ultima
+#ojo el indice es MUY DIFERENTE AL VALOR
+sorted_order = np.argsort(last_column)
+#aplicamos la ordenación de indices a todo al narray de numpy
+taxi_sorted = taxi[sorted_order]
+print(taxi_sorted)

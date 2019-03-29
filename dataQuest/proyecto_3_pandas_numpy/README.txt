@@ -36,10 +36,11 @@ Or any combination of the above.
 Ventajas:
 
 - Las operaciones y funciones contra matrices son muy ganadoras en cuanto a sintactic sugar.
-
+- Las operaciones YA VIENEN OPTIMIZADAS!!! NO REINVENTE LA RUEDA SEÑOR!!
 
 
 :::::::::::::::::::::::Vector Math:::::::::::::::
+No son mas que operaciones entre vectores como sura, resta, mult, div, refuerce con el siguiente link
 https://docs.scipy.org/doc/numpy-1.14.0/reference/routines.math.html#arithmetic-operations
 
 Eje: sums2 = my_numbers[:,0] + my_numbers[:,1]
