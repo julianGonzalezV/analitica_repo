@@ -53,3 +53,21 @@ vector_a % vector_b - Modulus (find the remainder when vector_a is divided by ve
 vector_a ** vector_b - Exponent (raise vector_a to the power of vector_b)
 vector_a // vector_b - Floor Division (divide vector_a by vector_b, rounding down to the nearest integer)
 
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::PANDAS:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+Problema de numpy:
+The lack of support for column names forces us to frame the questions we want to answer as multi-dimensional array operations.
+Support for only one data type per ndarray makes it more difficult to work with data that contains both numeric and string data.
+There are lots of low level methods, however there are many common analysis patterns that don't have pre-built methods.
+
+
+The pandas library provides solutions to all of these pain an more :) :) :)...........
+The underlying code for pandas uses the NumPy library extensively
+
+
+
